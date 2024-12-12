@@ -1,11 +1,5 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  Dijkstra's Algorithm
-</head>
-<body>
-    <pre>
+
+<pre>
 #include &lt;iostream&gt;
 #include &lt;climits&gt;
 
@@ -61,8 +55,6 @@ void Dijkstra::shortest_path(int src)
     dist[src] = 0; 
     for (int count = 0; count &lt; v - 1; count++)
     {
-
-    
         int min_dist = INT_MAX, u;
 
         for (int i = 0; i &lt; v; i++)
@@ -125,6 +117,4 @@ int main()
 
     return 0;
 }
-    </pre>
-</body>
-</html>
+</pre>
