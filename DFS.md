@@ -1,10 +1,5 @@
-<html>
-<head>
-    <title>DFS Traversal Code</title>
-</head>
-<body>
-    <h1>DFS Traversal Code</h1>
-    <pre>
+
+<pre>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -37,6 +32,5 @@ int main() {
 
     return 0;
 }
-    </pre>
-</body>
-</html>
+</pre>
+
