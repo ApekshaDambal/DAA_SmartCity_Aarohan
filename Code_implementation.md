@@ -38,9 +38,9 @@
   ---
 
  # Code Implementation:
-- **Kruskal's Algorithm-** [Click Here](./Kruskal's.md)
-- **Dijkstra's Algorithm-** [Click Here](./Dijkstra's.md)
-- **BFS-** [Click Here](./BFS.md)
+- **Kruskal's Algorithm-** [Click Here](https://github.com/ApekshaDambal/DAA_SmartCity_Aarohan/blob/main/Kruskal's.md)
+- **Dijkstra's Algorithm-** [Click Here](https://github.com/ApekshaDambal/DAA_SmartCity_Aarohan/blob/main/Dijkstra's.md)
+- **BFS-** [Click Here](https://github.com/ApekshaDambal/DAA_SmartCity_Aarohan/blob/main/BFS.md)
 - **DFS-** [Click Here](https://github.com/ApekshaDambal/DAA_SmartCity_Aarohan/blob/main/DFS.md)
 - **Floyd-Warshall Algorithm-** [Click Here]
 - **Merge Sort-** [Click Here]
