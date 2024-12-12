@@ -1,6 +1,3 @@
-
-</style>
-
 <h1>BFS Traversal Code</h1>
 <pre>
 #include &lt;iostream&gt;
