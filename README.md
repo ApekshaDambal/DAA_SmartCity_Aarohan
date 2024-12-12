@@ -4,9 +4,9 @@
 
 Let me help you go through the content.
 - [Introduction](./Introduction.md)
-- [SDG Mapping](./SDG%20Mapping.md)
-- [Refine Business cases based on SDG](./Refine%20Business%20cases%20based%20on%20SDG.md)
+- [SDG Mapping](./SDG_Mapping.md)
+- [Refine Business cases based on SDG](./Refined_Business_cases_based_on_SDG.md)
 - [Course Reflection](https://apekshadambal.github.io/Course-Learning-Reflections/)
-- [Code Implementation](./Code%20Implementation.md)
+- [Code Implementation](./Code_implementation.md)
 
 
