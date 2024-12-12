@@ -1,27 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BFS Traversal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            padding: 20px;
-        }
-        pre {
-            background-color: #e8e8f0;
-            border: 1px solid #ccc;
-            padding: 15px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-    </style>
-</head>
-<body>
-    <h1>BFS Traversal Code</h1>
-    <pre>
+
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+pre {
+    background-color: #e8e8f0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+</style>
+
+<h1>BFS Traversal Code</h1>
+<pre>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -66,6 +61,4 @@ int main() {
 
     return 0;
 }
-    </pre>
-</body>
-</html>
+</pre>
