@@ -1,68 +1,80 @@
----
-layout: default
-title: Graph Algorithms
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruskal's Algorithm</title>
+</head>
+<body>
+    <pre>
+#include &lt;iostream&gt;
 
-# Graph Algorithms
-
-## 1. Kruskal's Algorithm
-
-Kruskal's Algorithm is a method for finding the Minimum Spanning Tree (MST) of a connected, undirected graph.
-
-```cpp```
-#include <iostream>
-#include <algorithm>
 using namespace std;
 
-class Edge {
+class d {
 public:
-    int u, v, w;
+    int u;
+    int v;
+    int w;
 };
 
-int find(int parent[], int i) {
-    if (parent[i] == -1)
-        return i;
-    return find(parent, parent[i]);
+int find(int arr[50], int u, int v) {
+    if (arr[u] == arr[v]) {
+        return 1;
+    } else {
+        return 0;
+    }
 }
 
-void union_set(int parent[], int x, int y) {
-    int xset = find(parent, x);
-    int yset = find(parent, y);
-    parent[xset] = yset;
-}
-
-bool compare(Edge a, Edge b) {
-    return a.w < b.w;
-}
-
-void kruskal(Edge edges[], int n, int e) {
-    sort(edges, edges + e, compare);
-    int parent[n];
-    fill_n(parent, n, -1);
-
-    cout << "Minimum Spanning Tree (MST):" << endl;
-    for (int i = 0; i < e; i++) {
-        int u = edges[i].u;
-        int v = edges[i].v;
-
-        if (find(parent, u) != find(parent, v)) {
-            cout << u << " -- " << v << " == " << edges[i].w << endl;
-            union_set(parent, u, v);
+void union_set(int arr[50], int u, int v, int n) {
+    int temp = arr[u];
+    for (int i = 0; i &lt; n; i++) {
+        if (arr[i] == temp) {
+            arr[i] = arr[v];
         }
+    }
+}
+
+void Merge(d B[], int p, d C[], int q, d A[]) {
+    int i = 0, j = 0, k = 0;
+
+    while (i &lt; p && j &lt; q) {
+        if (B[i].w &lt;= C[j].w) {
+            A[k++] = B[i++];
+        } else {
+            A[k++] = C[j++];
+        }
+    }
+    while (i &lt; p) {
+        A[k++] = B[i++];
+    }
+    while (j &lt; q) {
+        A[k++] = C[j++];
+    }
+}
+
+void MergeSort(d A[], int n) {
+    if (n &gt; 1) {
+        int mid = n / 2;
+
+        d B[50], C[50];
+        for (int i = 0; i &lt; mid; i++) {
+            B[i] = A[i];
+        }
+        for (int i = mid; i &lt; n; i++) {
+            C[i - mid] = A[i];
+        }
+
+        MergeSort(B, mid);
+        MergeSort(C, n - mid);
+        Merge(B, mid, C, n - mid, A);
     }
 }
 
 int main() {
     int n, e;
-    cout << "Enter the number of vertices and edges: ";
-    cin >> n >> e;
+    cout &lt;&lt; "Enter the number of vertices and edges: ";
+    cin &gt;&gt; n &gt;&gt; e;
 
-    Edge edges[e];
-    cout << "Enter the edges (u v w):" << endl;
-    for (int i = 0; i < e; i++) {
-        cin >> edges[i].u >> edges[i].v >> edges[i].w;
-    }
-
-    kruskal(edges, n, e);
-    return 0;
-}
+    d d1[50];
+    cout &lt;&lt; "Enter the edges (u v w):" &lt;&lt; endl;
