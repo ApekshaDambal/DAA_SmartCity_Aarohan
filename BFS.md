@@ -1,18 +1,4 @@
 
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    padding: 20px;
-}
-pre {
-    background-color: #e8e8f0;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
-    overflow-x: auto;
-}
 </style>
 
 <h1>BFS Traversal Code</h1>
