@@ -38,10 +38,10 @@
   ---
 
  # Code Implementation:
-- **Kruskal's Algorithm-** [Click Here]
-- **Dijkstra's Algorithm-** [Click Here]
-- **BFS-** [Click Here]
-- **DFS-** [Click Here]
+- **Kruskal's Algorithm-** [Click Here](./Kruskal's.md)
+- **Dijkstra's Algorithm-** [Click Here](./Dijkstra's.md)
+- **BFS-** [Click Here](./BFS.md)
+- **DFS-** [Click Here](./DFS.md)
 - **Floyd-Warshall Algorithm-** [Click Here]
 - **Merge Sort-** [Click Here]
 - **Heap Sort-** [Click Here]
