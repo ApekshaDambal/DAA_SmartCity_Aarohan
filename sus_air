@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Business Case: Sustainable Urban Design"
+---
+
+**Subtask:** Improving Air Quality Monitoring  
+**SDG Goal:** 11  
+**Target:** 11.6  
+**Indicator:** 11.6.2: Annual mean levels of fine particulate matter (PM2.5) monitored by IoT-enabled sensors, reducing urban health risks.
+
+Aarohan is dedicated to enhancing urban health through effective air quality monitoring. By implementing IoT-enabled sensors, we aim to track annual mean levels of fine particulate matter (PM2.5) in the city. This initiative provides real-time data to identify pollution sources and inform residents, ultimately supporting healthier living conditions.
+
+### Key Components of the Air Quality Monitoring Initiative:
+
+| Component           | Quantity |
+|---------------------|----------|
+| IoT-enabled Sensors | 8        |
+
+By leveraging IoT sensors and utilizing **Kruskal's Algorithm** for efficient connections, Aarohan will continuously monitor air quality while minimizing costs associated with installation and maintenance, which represent the weights of the edges in the optimization graph. This approach provides valuable information to the community and enhances urban living, making Aarohan a healthier and more sustainable city. You can find the code for the monitoring system [HERE](#).
