@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City AAROHAN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #050012;
+            color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
+        h2 {
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+        .subtitle {
+            display: block;
+            margin-left: 5em;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: black;
+            border-radius: 5px;
+            background: linear-gradient(90deg, #020146, #000088);
+            color: white;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0c0024;
+        }
+        #content {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-family: 'Times New Roman', Times, serif;
+            display: none;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+            border: 1px solid #040000;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #080025;
+        }
+        pre {
+            background-color: #ffffff;
+            color: #000;
+            padding: 10px;
+            border-color: #0c0024;
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        .home-box {
+    background: linear-gradient(145deg, #060011, #120136);
+    color: #f5f5f5;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #3498db;
+    display: inline-block;
+    box-shadow: 0 6px 15px rgba(0, 0, 116, 0.5);
+    width: 1100px; /* Fixed width */
+    height: 125px; /* Fixed height */
+    overflow: hidden; /* Prevent overflow of content */
+}
+.home h2 {
+            font-size: 50px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #090161, #12d5f3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subheading {
+            margin-top: -10px;
+            font-size: 24px;
+            font-style: italic;
+            color: #1a74ce;
+        }
+    </style>
+    <script>
+
+function showPersonalDetails() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h3>🌟 Hello, I’m Apeksha A Dambal! 🌟</h3>
+        
+        <h4>Details:</h4>
+        <p><strong>Roll No:</strong> 345</p>
+        <p><strong>USN:</strong> 01FE23BCS241</p>
+
+        <h4>My business cases are:</h4>
+        <ul>
+            <li><strong>Health</strong></li>
+            <li><strong>Government Sectors</strong></li>
+            <li><strong>Sustainability</strong></li>
+            <li><strong>Water Management</strong></li>
+        </ul>
+
+        <h4>About Me:</h4>
+        <p>I’m passionate about leveraging innovative solutions to create impactful outcomes. I’m excited to contribute my ideas and efforts to our project, aiming to make every solution count.</p>
+
+        <h4>Let's build smarter cities together! 🌟</h4>
+    `;
+    content.style.display = 'block';
+}
+
+function showSDGMapping() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h3>SDG Mapping</h3>
+
+        <h4>1. Health</h4>
+        <ul>
+            <p><strong>SDG 11:</strong> Sustainable Cities and Communities</p>
+            <li>11.6.2: Annual mean levels of fine particulate matter (PM2.5) monitored by IoT-enabled sensors, reducing urban health risks.</li>
+        </ul>
+
+        <h4>2. Water Management</h4>
+        <ul>
+            <p><strong>SDG 11:</strong> Sustainable Cities and Communities</p>
+            <li>11.3.1: Ratio of land consumption to population growth, emphasizing integrated water resource management in urban planning.</li>
+        </ul>
+
+        <h4>3. Government Sector</h4>
+        <ul>
+            <p><strong>SDG 11:</strong> Sustainable Cities and Communities</p>
+            <li>11.3.2: Proportion of cities with a direct participation structure of civil society in urban planning and management, promoting transparency and inclusiveness in governance.</li>
+        </ul>
+
+        <h4>4. Sustainability</h4>
+        <ul>
+            <p><strong>SDG 11:</strong> Sustainable Cities and Communities</p>
+            <li>11.2.1: Proportion of population with access to public transport, enhancing sustainable urban mobility and reducing environmental impact.</li>
+        </ul>
+    `;
+    content.style.display = 'block';
+}
+
+function showBusinessCases() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h3>Business Cases</h3>
+        
+        <h4>Business Case 1: Sustainable Urban Design</h4>
+        <p>Leveraging digital health solutions, such as telemedicine and electronic health records, to improve access to healthcare services, enhance patient outcomes, and promote preventive care in urban settings.</p>
+
+        <h4>Business Case 2: E-Governance and Smart Public Services</h4>
+        <p>Implementing smart governance through digital platforms that enhance transparency, citizen engagement, and efficient public service delivery, fostering trust and accountability in government operations.</p>
+
+        <h4>Business Case 3: Water Conservation</h4>
+        <p>Utilizing smart water management systems, including IoT sensors and data analytics, to monitor water quality, optimize usage, reduce wastage, and ensure sustainable water supply for urban populations.</p>
+
+        <h4>Business Case 4: Smart Healthcare Solutions</h4>
+        <p>Promoting innovative healthcare technologies, such as telemedicine and AI-driven diagnostics, to improve access, efficiency, and patient outcomes in urban healthcare systems.</p>
+    `;
+    content.style.display = 'block';
+}
+function showCourseLearningReflections() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h3>Course-Learning Reflections</h3>
+        
+        <h4>1. Problems in Nature: Iteration, Recursion, Backtracking</h4>
+        <p>Problems in nature can be solved using iteration, recursion, or backtracking. Iteration involves repeating steps, like counting animal populations or watching seasonal changes. Recursion solves problems by breaking them into smaller parts, such as the patterns of tree branches or fractals in snowflakes. Backtracking explores all possible options and returns to try a different path if needed, like ants searching for food or animals solving mazes.</p>
+        
+        <h4>2. What is space and time efficiency? Why are they important?</h4>
+        <p>Space efficiency is about how much memory an algorithm uses, and time efficiency is about how fast it runs. These are important because they help us choose algorithms that can handle large tasks without using too much memory or taking too long. For example, algorithms that take constant time (O(1)) or logarithmic time (O(log n)) are very fast. However, those with quadratic (O(n²)) or exponential time (O(2ⁿ)) can be too slow for large problems. Choosing efficient algorithms is crucial in real-world tasks like processing data or running programs smoothly.</p>
+
+        <h4>3. Takeaways from Chapter 2 Design Principles</h4>
+        <p>Key design principles include divide and conquer, greedy methods, dynamic programming, and abstraction. Divide and conquer breaks problems into smaller pieces, solves them, and combines the results, like in merge sort. Greedy methods focus on making the best choice at every step, such as finding the shortest route in a map. Dynamic programming stores solutions to smaller problems to avoid repeating work, like calculating Fibonacci numbers. Abstraction helps simplify problems by focusing only on what matters and ignoring extra details, like in object-oriented programming.</p>
+
+        <h4>4. The Hierarchical Data and Tree Data Structures</h4>
+        <p>Tree structures are useful for organizing and solving problems efficiently. Binary search trees (BSTs) are good for fast searching and sorting. Self-balancing trees like AVL trees or red-black trees ensure operations remain quick even as the tree grows. Tries are special trees for working with words, such as in auto-complete suggestions. Heaps are trees used to manage priorities, such as finding the largest or smallest item quickly. These structures are essential for handling complex tasks in an organized way.</p>
+
+        <h4>5. The Need for Array Query Algorithms</h4>
+        <p>Array query algorithms help retrieve and update data quickly. For example, prefix sums can calculate the total of a range in an array very fast. Segment trees and Fenwick trees are advanced tools that allow for both updates and queries efficiently. These algorithms are used in applications like tracking scores, stock prices, or rainfall over time.</p>
+
+        <h4>6. Differentiation Between Trees and Graphs</h4>
+        <p>Trees and graphs represent data differently and are used for distinct purposes. Trees are hierarchical with a single root and no cycles, like family trees or file systems. Graphs, on the other hand, are more general, allowing multiple connections and cycles, such as in social networks or transportation systems. Trees have specific traversals like preorder, inorder, and postorder for structured data exploration, while graphs use BFS and DFS for navigating interconnected data.</p>
+
+        <h4>7. Sorting and Searching Algorithms in Real-World Contexts</h4>
+        <p>Sorting and searching algorithms are essential for managing and retrieving data efficiently. Sorting algorithms, such as merge sort and quick sort, organize data in a specified order, which is vital for applications like e-commerce and data analysis. Merge sort uses a divide-and-conquer strategy, while quick sort selects a pivot to partition and sort the data. Searching algorithms, such as binary search, allow for quick retrieval of items from sorted lists by halving the search space repeatedly. This makes them ideal for applications like finding records in databases or locating files. Efficient sorting and searching enhance user experiences and optimize performance in various technology solutions.</p>
+
+        <h4>8. Importance of Graph Algorithms</h4>
+        <p>Graph algorithms play a vital role in solving problems related to networks and connections, particularly through spanning trees and shortest paths. A spanning tree connects all vertices in a graph without cycles, using the minimum number of edges, which is essential for optimizing network design and infrastructure. Algorithms like Kruskal’s and Prim’s help identify minimum spanning trees for efficient communication networks and road systems. Conversely, shortest path algorithms, such as Dijkstra’s and Bellman-Ford, find the most efficient route between nodes, which is crucial for GPS navigation and logistics. These algorithms minimize travel time and distance, ensuring efficient resource usage. Overall, graph algorithms enhance decision-making and operational efficiency across various fields, including transportation, telecommunications, and urban planning. Their ability to model interconnected systems makes them indispensable for addressing real-world challenges.</p>
+
+        <h4>9. Algorithm Design Techniques</h4>
+        <p>
+            <strong>Divide and Conquer:</strong> This technique involves breaking a problem into smaller subproblems, solving them independently, and combining their results. It is effective for problems that can be recursively divided, as seen in algorithms like merge sort and quick sort.<br>
+            <strong>Dynamic Programming:</strong> This method is used for optimization problems with overlapping subproblems, storing the results of solved subproblems to avoid redundant calculations. It is commonly applied in scenarios like the Fibonacci sequence and the knapsack problem.<br>
+            <strong>Greedy Algorithms:</strong> Greedy techniques make locally optimal choices at each step, aiming for a global optimum. They are particularly useful for problems like minimum spanning trees and activity selection, where local decisions lead to overall efficiency.<br>
+            <strong>Backtracking:</strong> This technique explores all possible solutions by trying partial solutions and abandoning them when they fail to meet criteria. It is commonly applied in constraint satisfaction problems, such as the N-Queens problem and solving mazes.
+        </p>
+
+        <h4>10. Efficient Approach to Solve a Complex Problem</h4>
+        <p>To find the best way to solve a complex problem, I first make sure I understand the issue clearly and break it down into smaller parts. Then, I look for existing solutions and compare different methods based on how well they work and how easy they are to implement. I often create a simple version of the solution to test it and see what works best. I keep improving the solution based on the test results and also ask for feedback from others to make it even better.</p>
+
+        <h4>11. Knowledge Application</h4>
+        <p>Applying knowledge from one context to solve problems in another can be highly beneficial. It allows for the transfer of effective strategies and insights, fostering innovative solutions. For instance, techniques learned in data analysis can help in decision-making processes in urban planning. By recognizing patterns and relationships in one field, it becomes easier to identify similar challenges and apply proven methods to address them in a new context, enhancing problem-solving capabilities overall.</p>
+
+        <h4>12. Strategies for Identifying Patterns</h4>
+        <p>
+            <strong>Divide and Conquer:</strong> Break down complex problems into smaller, manageable subproblems, solving each one to identify patterns in the overall structure.<br>
+            <strong>Data Structure Selection:</strong> Choose appropriate data structures (like trees or graphs) that naturally reflect the relationships in the data, aiding in pattern recognition during analysis.<br>
+            <strong>Algorithm Complexity Analysis:</strong> Analyze the time and space complexity of algorithms to understand their efficiency, which can highlight patterns in performance across different inputs.<br>
+            <strong>Testing and Iteration:</strong> Conduct tests with varied input cases and iterate on design choices, observing how changes impact performance and revealing underlying patterns in behavior.
+        </p>
+
+        <h4>13. Innovation vs. Stability</h4>
+        <p>When tackling new challenges, innovative approaches may be necessary, but tried-and-tested methods provide stability for well-understood problems. Balancing innovation and stability is crucial in real-world applications.</p>
+    `;
+    content.style.display = 'block';
+}
+
+function showCodeImplementation() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+    <h3>Code Implementation for Smart City Domains</h3>
+    <h4>1. Sustainable Urban Design</h4>
+    <ul>
+        <li><strong>Kruskal’s Algorithm:</strong> Design cost-effective infrastructure networks, such as roads and utilities, to minimize resource consumption.</li>
+        <li><strong>Dijkstra’s Algorithm:</strong> Optimize transportation routes to reduce travel time and emissions in urban areas.</li>
+        <li><strong>BFS/DFS:</strong> Analyze urban layouts to identify underutilized spaces and potential areas for green development.</li>
+        <li><strong>Dynamic Programming (DP):</strong> Optimize land use planning to balance residential, commercial, and recreational spaces.</li>
+    </ul>
+
+    <h4>2. E-Governance and Smart Public Services</h4>
+    <ul>
+        <li><strong>Dijkstra’s Algorithm:</strong> Optimize shortest paths for citizen service delivery, such as emergency response or waste collection routes.</li>
+        <li><strong>BFS/DFS:</strong> Traverse service networks to identify bottlenecks or underserved regions.</li>
+        <li><strong>Kruskal’s Algorithm:</strong> Design cost-efficient communication or utility networks for public services.</li>
+        <li><strong>Floyd-Warshall Algorithm:</strong> Analyze all-pairs shortest paths for seamless interdepartmental coordination.</li>
+    </ul>
+
+    <h4>3. Water Conservation</h4>
+    <ul>
+        <li><strong>Kruskal’s Algorithm:</strong> Design efficient networks for water distribution to minimize wastage.</li>
+        <li><strong>Bellman-Ford Algorithm:</strong> Model water flow with costs related to elevation or pressure loss.</li>
+        <li><strong>Segment Trees:</strong> Monitor reservoir levels and detect anomalies in real-time.</li>
+        <li><strong>BFS/DFS:</strong> Explore and identify regions with potential water leaks or inefficiencies.</li>
+        <li><strong>Dynamic Programming (DP):</strong> Optimize irrigation schedules for sustainable water usage in agriculture.</li>
+    </ul>
+
+    <h4>4. Smart Healthcare Solutions</h4>
+    <ul>
+        <li><strong>Dijkstra’s Algorithm:</strong> Optimize ambulance or mobile health unit routes in real-time.</li>
+        <li><strong>Heap:</strong> Prioritize patient triage queues based on severity levels.</li>
+        <li><strong>BFS/DFS:</strong> Map disease spread or trace contact networks during outbreaks.</li>
+        <li><strong>Segment Trees:</strong> Monitor real-time health metrics from IoT devices for anomaly detection.</li>
+        <li><strong>Kruskal’s Algorithm:</strong> Build cost-effective telemedicine or connected hospital networks.</li>
+    </ul>
+
+    <h3>Code Implementation for Smart City Domains</h3>
+    <h4>Kruskal’s Algorithm</h4>
+    <p>Design cost-effective infrastructure networks, such as roads and utilities, to minimize resource consumption.</p>
+    <pre>
+        #include &lt;iostream&gt;
+        using namespace std;
+
+        class Edge {
+        public:
+            int u, v, w;
+            Edge(int u, int v, int w) : u(u), v(v), w(w) {}
+        };
+
+        int find(int parent[], int u) {
+            if (parent[u] == u)
+                return u;
+            return parent[u] = find(parent, parent[u]);
+        }
+
+        void union_set(int parent[], int rank[], int u, int v) {
+            int rootU = find(parent, u);
+            int rootV = find(parent, v);
+            if (rootU != rootV) {
+                if (rank[rootU] > rank[rootV])
+                    parent[rootV] = rootU;
+                else if (rank[rootU] < rank[rootV])
+                    parent[rootU] = rootV;
+                else {
+                    parent[rootV] = rootU;
+                    rank[rootU]++;
+                }
+            }
+        }
+
+        void kruskal(vector<Edge>& edges, int V) {
+            sort(edges.begin(), edges.end(), [](Edge a, Edge b) {
+                return a.w < b.w;
+            });
+
+            int parent[V], rank[V];
+            for (int i = 0; i < V; i++) {
+                parent[i] = i;
+                rank[i] = 0;
+            }
+
+            vector<Edge> mst;
+            for (Edge e : edges) {
+                int rootU = find(parent, e.u);
+                int rootV = find(parent, e.v);
+                if (rootU != rootV) {
+                    mst.push_back(e);
+                    union_set(parent, rank, e.u, e.v);
+                }
+            }
+
+            cout << "Edges in the Minimum Spanning Tree:\n";
+            for (Edge e : mst) {
+                cout << e.u << " - " << e.v << " : " << e.w << endl;
+            }
+        }
+
+        int main() {
+            int V = 4;
+            vector<Edge> edges = {
+                Edge(0, 1, 10),
+                Edge(0, 2, 6),
+                Edge(0, 3, 5),
+                Edge(1, 3, 15),
+                Edge(2, 3, 4)
+            };
+            kruskal(edges, V);
+            return 0;
+        }
+    </pre>
+
+    <h4>Dijkstra’s Algorithm</h4>
+    <p>Optimize transportation routes to reduce travel time and emissions in urban areas.</p>
+    <pre>
+        #include &lt;iostream&gt;
+        using namespace std;
+
+        class Graph {
+        public:
+            int V;
+            vector<vector<int>> adj;
+
+            Graph(int V) {
+                this->V = V;
+                adj.resize(V, vector<int>(V, INT_MAX));
+            }
+
+            void addEdge(int u, int v, int w) {
+                adj[u][v] = w;
+                adj[v][u] = w;
+            }
+
+            void dijkstra(int start) {
+                vector<int> dist(V, INT_MAX);
+                dist[start] = 0;
+                vector<bool> visited(V, false);
+
+                for (int i = 0; i < V - 1; i++) {
+                    int u = -1;
+                    for (int j = 0; j < V; j++) {
+                        if (!visited[j] && (u == -1 || dist[j] < dist[u])) {
+                            u = j;
+                        }
+                    }
+
+                    visited[u] = true;
+                    for (int v = 0; v < V; v++) {
+                        if (!visited[v] && adj[u][v] != INT_MAX) {
+                            dist[v] = min(dist[v], dist[u] + adj[u][v]);
+                        }
+                    }
+                }
+
+                cout << "Shortest distances from vertex " << start << ":\n";
+                for (int i = 0; i < V; i++) {
+                    cout << "To " << i << " : " << dist[i] << endl;
+                }
+            }
+        };
+
+        int main() {
+            Graph g(5);
+            g.addEdge(0, 1, 10);
+            g.addEdge(0, 2, 5);
+            g.addEdge(1, 2, 2);
+            g.addEdge(1, 3, 1);
+            g.addEdge(2, 3, 9);
+            g.addEdge(3, 4, 4);
+            g.dijkstra(0);
+            return 0;
+        }
+    </pre>
+
+    <h4>BFS</h4>
+    <p>Traverse service networks to identify bottlenecks or underserved regions.</p>
+    <pre>
+        #include &lt;iostream&gt;
+        #include &lt;queue&gt;
+        using namespace std;
+
+        class BFSGraph {
+        public:
+            int V;
+            vector<vector<int>> adj;
+
+            BFSGraph(int V) {
+                this->V = V;
+                adj.resize(V);
+            }
+
+            void addEdge(int u, int v) {
+                adj[u].push_back(v);
+                adj[v].push_back(u);
+            }
+
+            void bfs(int start) {
+                vector<bool> visited(V, false);
+                queue<int> q;
+                visited[start] = true;
+                q.push(start);
+
+                cout << "BFS starting from vertex " << start << ":\n";
+                while (!q.empty()) {
+                    int u = q.front();
+                    q.pop();
+                    cout << u << " ";
+
+                    for (int v : adj[u]) {
+                        if (!visited[v]) {
+                            visited[v] = true;
+                            q.push(v);
+                        }
+                    }
+                }
+                cout << endl;
+            }
+        };
+
+        int main() {
+            BFSGraph g(5);
+            g.addEdge(0, 1);
+            g.addEdge(0, 2);
+            g.addEdge(1, 3);
+            g.addEdge(2, 4);
+            g.bfs(0);
+            return 0;
+        }
+    </pre>
+
+    <h4>DFS</h4>
+    <p>Map disease spread or trace contact networks during outbreaks.</p>
+    <pre>
+        #include &lt;iostream&gt;
+        #include &lt;vector&gt;
+        using namespace std;
+
+        class DFSGraph {
+        public:
+            int V;
+            vector<vector<int>> adj;
+
+            DFSGraph(int V) {
+                this->V = V;
+                adj.resize(V);
+            }
+
+            void addEdge(int u, int v) {
+                adj[u].push_back(v);
+                adj[v].push_back(u);
+            }
+
+            void dfs(int u, vector<bool>& visited) {
+                visited[u] = true;
+                cout << u << " ";
+
+                for (int v : adj[u]) {
+                    if (!visited[v]) {
+                        dfs(v, visited);
+                    }
+                }
+            }
+        };
+
+        int main() {
+            DFSGraph g(5);
+            g.addEdge(0, 1);
+            g.addEdge(0, 2);
+            g.addEdge(1, 3);
+            g.addEdge(2, 4);
+            vector<bool> visited(5, false);
+            g.dfs(0, visited);
+            return 0;
+        }
+    </pre>
+
+    <h4>Floyd-Warshall Algorithm</h4>
+    <p>Analyze all-pairs shortest paths for seamless interdepartmental coordination.</p>
+    <pre>
+        #include &lt;iostream&gt;
+        #include &lt<vector&gt;
+        #include &lt;climits&gt;
+        using namespace std;
+
+        void floydWarshall(vector<vector<int>>& graph, int V) {
+            vector<vector<int>> dist = graph;
+
+            for (int k = 0; k < V; k++) {
+                for (int i = 0; i < V; i++) {
+                    for (int j = 0; j < V; j++) {
+                        if (dist[i][k] != INT_MAX && dist[k][j] != INT_MAX && dist[i][k] + dist[k][j] < dist[i][j]) {
+                            dist[i][j] = dist[i][k] + dist[k][j];
+                        }
+                    }
+                }
+            }
+
+            cout << "All pairs shortest paths:\n";
+            for (int i = 0; i < V; i++) {
+                for (int j = 0; j < V; j++) {
+                    if (dist[i][j] == INT_MAX) {
+                        cout << "INF ";
+                    } else {
+                        cout << dist[i][j] << " ";
+                    }
+                }
+                cout << endl;
+            }
+        }
+
+        int main() {
+            int V = 4;
+            vector<vector<int>> graph = {
+                {0, 3, INT_MAX, 7},
+                {3, 0, 1, 2},
+                {INT_MAX, 1, 0, 3},
+                {7, 2, 3, 0}
+            };
+
+            floydWarshall(graph, V);
+            return 0;
+        }
+    </pre>
+
+    <h4>Merge Sort</h4>
+    <p>A sorting algorithm that divides the array into two halves, recursively sorts them, and merges the sorted halves.</p>
+    <pre>
+        #include &lt;iostream&gt;
+        using namespace std;
+
+        void merge(int arr[], int left, int mid, int right) {
+            int n1 = mid - left + 1;
+            int n2 = right - mid;
+            int L[n1], R[n2];
+
+            for (int i = 0; i < n1; i++) L[i] = arr[left + i];
+            for (int i = 0; i < n2; i++) R[i] = arr[mid + 1 + i];
+
+            int i = 0, j = 0, k = left;
+            while (i < n1 && j < n2) {
+                if (L[i] <= R[j]) {
+                    arr[k++] = L[i++];
+                } else {
+                    arr[k++] = R[j++];
+                }
+            }
+
+            while (i < n1) arr[k++] = L[i++];
+            while (j < n2) arr[k++] = R[j++];
+        }
+
+        void mergeSort(int arr[], int left, int right) {
+            if (left < right) {
+                int mid = left + (right - left) / 2;
+
+                mergeSort(arr, left, mid);
+                mergeSort(arr, mid + 1, right);
+                merge(arr, left, mid, right);
+            }
+        }
+
+        int main() {
+            int arr[] = {12, 11, 13, 5, 6, 7};
+            int n = sizeof(arr) / sizeof(arr[0]);
+
+            mergeSort(arr, 0, n - 1);
+
+            cout << "Sorted array: ";
+            for (int i = 0; i < n; i++) {
+                cout << arr[i] << " ";
+            }
+            cout << endl;
+
+            return 0;
+        }
+    </pre>
+
+    <h4>Heap Sort</h4>
+    <p>A comparison-based sorting algorithm that uses a binary heap data structure to sort elements.</p>
+    <pre>
+        #include &lt;iostream&gt;
+        using namespace std;
+
+        void heapify(int arr[], int n, int i) {
+            int largest = i;
+            int left = 2 * i + 1;
+            int right = 2 * i + 2;
+
+            if (left < n && arr[left] > arr[largest])
+                largest = left;
+
+            if (right < n && arr[right] > arr[largest])
+                largest = right;
+
+            if (largest != i) {
+                swap(arr[i], arr[largest]);
+                heapify(arr, n, largest);
+            }
+        }
+
+        void heapSort(int arr[], int n) {
+            for (int i = n / 2 - 1; i >= 0; i--)
+                heapify(arr, n, i);
+
+            for (int i = n - 1; i >= 0; i--) {
+                swap(arr[0], arr[i]);
+                heapify(arr, i, 0);
+            }
+        }
+
+        int main() {
+            int arr[] = {12, 11, 13, 5, 6, 7};
+            int n = sizeof(arr) / sizeof(arr[0]);
+
+            heapSort(arr, n);
+
+            cout << "Sorted array: ";
+            for (int i = 0; i < n; i++) {
+                cout << arr[i] << " ";
+            }
+            cout << endl;
+
+            return 0;
+        }
+    </pre>
+    `;
+
+    content.style.display = 'block';
+}
+
+ </script>
+</head>
+<body>
+    <div class="home">
+        <div class="home-box">
+            <h2>Project Presentation</h2>
+            <p class="subheading">Innovative Approaches to Sustainability and Urban Development</p>
+            
+        </div>
+    </div>
+
+   
+
+    <div class="button-container">
+        <button onclick="showCourseLearningReflections()">Course reflection</button>
+        <button onclick="showPersonalDetails()">Introduction</button>
+        <button onclick="showBusinessCases()">Business Cases</button>
+        <button onclick="showSDGMapping()">SDG Mapping</button>
+        <button onclick="showCodeImplementation()">Code Implementation</button>
+    </div>
+
+    <div id="content"></div>
+</body>
+</html>
